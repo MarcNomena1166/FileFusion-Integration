@@ -21,9 +21,13 @@ using FileFusionClass = FileFusion.FileFusion;
 static void Sample()
 {
     List<string> escapeChar = new List<string> { "/", "(", ")", ".", " " };
+    
     string path = System.AppContext.BaseDirectory;
+    
     string file = "Test.csv";
+    
     List<object>? result = FileFusionClass.Extract<SimpleData>(file, path, escapeChar, 3);
+    
     List<SimpleData> ahList = result.OfType<SimpleData>().ToList();
 }
 
