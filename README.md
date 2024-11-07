@@ -7,8 +7,9 @@ C# utilities to simplify retrieving data into a file in .NET applications.
 
 ## Installation
 To add the package to your .NET project dependencies, use the following command:
-```sh
 dotnet add package FileFusion
+
+
 ## Example Usage
 To use the package, specify the path and the name of the file with the extension.
 
