@@ -19,7 +19,6 @@ To use the package, specify the path and the name of the file with the extension
 
 using FileFusion;
 using FileFusionClass = FileFusion.FileFusion;
-
 static void Sample()
 {
     List<string> escapeChar = new List<string> { "/", "(", ")", ".", " " };
