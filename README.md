@@ -28,7 +28,7 @@ static void Sample()<br />
     List<object>? result = FileFusionClass.Extract<SimpleData>(file, path, escapeChar, 3);
 <br />
     List<SimpleData> ahList = result.OfType<SimpleData>().ToList();
-}
+<br />}
 
 
 
