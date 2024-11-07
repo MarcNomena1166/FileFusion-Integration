@@ -7,6 +7,7 @@ C# utilities to simplify retrieving data into a file in .NET applications.
 
 ## Installation
 To add the package to your .NET project dependencies, use the following command:
+
 dotnet add package FileFusion
 
 
@@ -17,16 +18,12 @@ To use the package, specify the path and the name of the file with the extension
 
 using FileFusion;
 using FileFusionClass = FileFusion.FileFusion;
-
 static void Sample()
 {
     List<string> escapeChar = new List<string> { "/", "(", ")", ".", " " };
-
     string path = System.AppContext.BaseDirectory;
     string file = "Test.csv";
-
     List<object>? result = FileFusionClass.Extract<SimpleData>(file, path, escapeChar, 3);
-
     List<SimpleData> ahList = result.OfType<SimpleData>().ToList();
 }
 
