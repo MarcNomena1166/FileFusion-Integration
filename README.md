@@ -9,10 +9,10 @@ C# utilities to simplify retrieving data into a file in .NET applications.
 To add the package to your .NET project dependencies, use the following command:
 ```sh
 dotnet add package FileFusion
-Example Usage
+## Example Usage
 To use the package, specify the path and the name of the file with the extension.
 
-Sample Code
+## Sample Code
 
 using FileFusion;
 using FileFusionClass = FileFusion.FileFusion;
@@ -29,8 +29,8 @@ static void Sample()
     List<SimpleData> ahList = result.OfType<SimpleData>().ToList();
 }
 
-Release Notes
+## Release Notes
 All releases and release notes are available on GitHub or the NuGet repository.
 
-Enjoy and Install
+## Enjoy and Install
 Marc Nomena Anjaratiana Randriamahaleo
