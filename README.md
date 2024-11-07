@@ -15,7 +15,7 @@ dotnet add package FileFusion
 To use the package, specify the path and the name of the file with the extension.
 
 ## Sample Code
-{
+```
 using FileFusion;
 using FileFusionClass = FileFusion.FileFusion;
 
@@ -30,8 +30,8 @@ static void Sample()
 
     List<SimpleData> ahList = result.OfType<SimpleData>().ToList();
 }
-}
 
+```
 
 
 ## Release Notes
