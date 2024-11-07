@@ -16,18 +16,17 @@ To use the package, specify the path and the name of the file with the extension
 
 ## Sample Code
 
-
-using FileFusion;
-using FileFusionClass = FileFusion.FileFusion;
-static void Sample()
-{
-    List<string> escapeChar = new List<string> { "/", "(", ")", ".", " " };
-
+using FileFusion; <br />
+using FileFusionClass = FileFusion.FileFusion;<br />
+static void Sample()<br />
+{<br />
+    List<string> escapeChar = new List<string> { "/", "(", ")", ".", " " };<br />
+<br />
     string path = System.AppContext.BaseDirectory;
     string file = "Test.csv";
-
+<br />
     List<object>? result = FileFusionClass.Extract<SimpleData>(file, path, escapeChar, 3);
-
+<br />
     List<SimpleData> ahList = result.OfType<SimpleData>().ToList();
 }
 
